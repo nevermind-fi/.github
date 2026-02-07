@@ -35,7 +35,7 @@ The AI decision happens _inside_ the CRE workflow, verified by Chainlink's DON c
      (contract reads)                (Next.js API routes)
                │                              │
 ┌──────────────▼──────────────┐  ┌────────────▼────────────────────┐
-│  YieldPilotVault.sol        │  │  CRE Workflow (DON)              │
+│  NevermindVault.sol        │  │  CRE Workflow (DON)              │
 │  Tenderly VNet (chain 73571)│  │                                  │
 │                             │  │  1. Fetch yields (DeFi Llama)    │
 │  - deposit(amount)          │  │     HTTPClient + consensus       │
@@ -91,10 +91,10 @@ The smart contract is deployed on a [Tenderly Virtual TestNet](https://docs.tend
 
 ## Deployed
 
-| Contract        | Address                                      | Network                     |
-| --------------- | -------------------------------------------- | --------------------------- |
-| YieldPilotVault | `0x2A8e741e626F795784f1926052DD61Af14A01638` | Tenderly VNet (chain 73571) |
-| USDC            | `0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48` | Mainnet fork                |
+| Contract       | Address                                      | Network                     |
+| -------------- | -------------------------------------------- | --------------------------- |
+| NevermindVault | `0x2A8e741e626F795784f1926052DD61Af14A01638` | Tenderly VNet (chain 73571) |
+| USDC           | `0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48` | Mainnet fork                |
 
 **Tenderly VNet RPC:** `https://virtual.rpc.tenderly.co/BESTOFRENTO/project/public/nevermind`
 
@@ -105,7 +105,7 @@ The smart contract is deployed on a [Tenderly Virtual TestNet](https://docs.tend
 | Repo                                                           | Description                                                            |
 | -------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | [`frontend`](https://github.com/nevermind-fi/frontend)         | Dashboard UI — deposit, yield charts, agent activity log               |
-| [`contracts`](https://github.com/nevermind-fi/contracts)       | YieldPilotVault.sol — vault logic with CRE-authorized rebalancing      |
+| [`contracts`](https://github.com/nevermind-fi/contracts)       | NevermindVault.sol — vault logic with CRE-authorized rebalancing       |
 | [`cre-workflow`](https://github.com/nevermind-fi/cre-workflow) | Chainlink CRE workflow — DeFi Llama + GPT-4o-mini + on-chain execution |
 
 ## Prize Tracks
