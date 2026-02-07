@@ -17,7 +17,7 @@ Deposit USDC ──> CRE Workflow triggers ──> AI analyzes yields across cha
 ```
 
 1. **Deposit & Configure** — Connect wallet, deposit USDC, set risk tolerance
-2. **AI Yield Analysis** — CRE workflow fetches live yield data from DeFi Llama, feeds it to GPT-4o-mini, returns allocation recommendation — all verified by Chainlink DON
+2. **AI Yield Analysis** — CRE workflow fetches live yield data from DeFi Llama, feeds it to GPT-4o-mini via OpenRouter, returns allocation recommendation — all verified by Chainlink DON
 3. **Auto-Rebalance** — Executes on-chain rebalancing when yield delta exceeds threshold
 
 ## Architecture
@@ -38,7 +38,7 @@ Deposit USDC ──> CRE Workflow triggers ──> AI analyzes yields across cha
 
 ## Built with
 
-Chainlink CRE · Ethereum · Arbitrum · OpenAI · Tenderly · thirdweb
+Chainlink CRE · Ethereum · Arbitrum · OpenRouter · Tenderly · thirdweb
 
 ---
 
